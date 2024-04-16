@@ -108,7 +108,7 @@ if (isset($_SESSION['token'])) {
         <img src="../img/bannerM.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="../img/imagembanner1.webp" class="d-block w-100" alt="...">
+        <img src="../img/banner3.png" class="d-block w-100" alt="...">
       </div>
 
     </div>
