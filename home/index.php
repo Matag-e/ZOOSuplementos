@@ -36,68 +36,68 @@ if (isset($_SESSION['token'])) {
 
 <body>
 
-<header>
-        <nav class="navbar navbar-expand-lg coloriz">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav justify-content-end spaces">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../home/index.php">Inicio</a>
-                        </li>
-                        <?php if ($idUser != '') { ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../carrinho/carrinho.php"><img
-                                    src="../img/icons8-shopping-cart-50.png" alt="" style="width:30px"></a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../login/desconecta.php"><img
-                                    src="../img/icons8-logout-50.png" alt="" class="fonteLog"><span>Logout</span></a>
-                        </li>
-                        <?php } else { ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../carrinho/carrinho.php"><img
-                                    src="../img/icons8-shopping-cart-50.png" alt="" style="width:30px"></a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../login/login.php"><img src="../img/account.png" alt=""
-                                    class="fonteLog"><span>Login</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../registro/registro.php"><img
-                                    src="../img/icons8-interface-de-usuário-natural-2-48.png" alt=""
-                                    class="fonteLog"><span class="Teste">Registre-se</span></a>
-                        </li>
-                        <?php } ?>
-                        <?php
+  <header>
+    <nav class="navbar navbar-expand-lg coloriz">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end spaces">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../home/index.php">Inicio</a>
+            </li>
+            <?php if ($idUser != '') { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+                  style="width:30px"></a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/desconecta.php"><img src="../img/icons8-logout-50.png" alt=""
+                  class="fonteLog"><span>Logout</span></a>
+            </li>
+            <?php } else { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+                  style="width:30px"></a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/login.php"><img src="../img/account.png" alt=""
+                  class="fonteLog"><span>Login</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../registro/registro.php"><img
+                  src="../img/icons8-interface-de-usuário-natural-2-48.png" alt="" class="fonteLog"><span
+                  class="Teste">Registre-se</span></a>
+            </li>
+            <?php } ?>
+            <?php
                         if ($idUser == '8') { ?>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../dbprod/add_product.php">Adicionar Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../dbprod/modidyprod.php">Listar Produtos</a>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../dbprod/add_product.php">Adicionar Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../dbprod/modidyprod.php">Listar Produtos</a>
+            </li>
+            <?php } ?>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -163,7 +163,9 @@ if (isset($_SESSION['token'])) {
             <img src="../img/rino.jpg" srcset="" class="imgCard">
           </div>
           <div class="textCard">
-            <h4>R$89.99 <br><p class="textoParc">em até 3x no cartão de crédito</p></h4>
+            <h4>R$89.99 <br>
+              <p class="textoParc">em até 3x no cartão de crédito</p>
+            </h4>
             </h4>
             <small class="textDesc">Experimente nosso Pré-Treino e maximaze seus resultados e diga adeus a seu cansaço
               !</small>
@@ -182,12 +184,14 @@ if (isset($_SESSION['token'])) {
             <img src="../img/wolf.jpg" alt="" class="imgCard">
           </div>
           <div class="textCard">
-            <h4>R$45.99 <br><p class="textoParc">em até 3x no cartão de crédito</p></h4>
+            <h4>R$45.99 <br>
+              <p class="textoParc">em até 3x no cartão de crédito</p>
+            </h4>
             <small class="textDesc">O Multi vitaminico é essencial para você manter suas vitaminas em seu dia a
               dia</small>
           </div>
           <button class="btnBuy">
-          <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -199,13 +203,15 @@ if (isset($_SESSION['token'])) {
             <img src="../img/crea.jpg" alt="" class="imgCard">
           </div>
           <div class="textCard">
-            <h4>R$80.99 <br><p class="textoParc">em até 3x no cartão de crédito</p></h4>
+            <h4>R$80.99 <br>
+              <p class="textoParc">em até 3x no cartão de crédito</p>
+            </h4>
             </h4>
             <small class="textDesc">Experimente nossa creatina e potencialize seus resultados e transforme seu fisico
               agora !</small>
           </div>
           <button class="btnBuy">
-          <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -216,17 +222,22 @@ if (isset($_SESSION['token'])) {
             <img src="../img/whey.jpg" alt="" class="imgCard">
           </div>
           <div class="textCard">
-            <h4>R$99.99 <br><p class="textoParc">em até 3x no cartão de crédito</p></h4>
+            <h4>R$99.99 <br>
+              <p class="textoParc">em até 3x no cartão de crédito</p>
+            </h4>
             </h4>
             <small class="textDesc">Experimente o poder do nosso whey para alcançar seus objetivos na vida
               fitness!</small>
           </div>
           <button class="btnBuy">
-          <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
-      <br>
+    </div>
+    <br>
+
+
 
 
   </section>
@@ -313,8 +324,34 @@ if (isset($_SESSION['token'])) {
         <label for="star1" title="text">1 star</label>
       </div>
     </div>
+    <div class="avaliacaoCard">
+      <div class="container">
+        <div class="header">
+        </div>
+        <div class="textCard">
+          <img src="/img/imgAV.png" alt="" class="imgAv">
+          <h4>Nao Lembro Nome<br>
+            <p class="textoParc">30/06/2002</p>
+          </h4>
+          </h4>
+          <small class="textoAv">A qualidade dos suplementos são incriveis</small>
+        </div>
+      </div>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+    </div>
   </div>
-  </div>
+
 
 
 

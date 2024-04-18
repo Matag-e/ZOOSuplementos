@@ -215,7 +215,7 @@ h2 {
 .cardi {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     margin: 30px;
 }
@@ -223,7 +223,7 @@ h2 {
 .cardes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     padding: 30px;
 }
