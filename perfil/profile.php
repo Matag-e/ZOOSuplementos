@@ -1,14 +1,5 @@
 <?php
-session_start();
-
-
-if (isset($_SESSION['token'])) {
-  // Obtém o ID do usuário da sessão
-  $idUser = $_SESSION['token'];
-} else{
-  $idUser = '';
-
-}
+include ('profileset.php');
 ?>
 
 
@@ -18,8 +9,8 @@ if (isset($_SESSION['token'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/perfil/profile.css">
-  <link rel="stylesheet" href="/home/index.css">
+  <link rel="stylesheet" href="../perfil/profile.css">
+<link rel="stylesheet" href="../home/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -32,7 +23,6 @@ if (isset($_SESSION['token'])) {
     rel="stylesheet">
   <title>Document</title>
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-lg coloriz">
@@ -101,14 +91,13 @@ if (isset($_SESSION['token'])) {
     <div class="cardUser">
       <div class="cartaoUser">
         <div class="photo">
-          <img src="/img/account.png" alt="" class="fotoPerfil">
+          <img src="../img/account.png" alt="" class="fotoPerfil">
         </div>
         <div class="nomeProfile">
-          <h1>MATEUS SANTOS SILVA</h1>
-          <p>Cliente desde: 21-12-2023</p>
-          
-          
+    <h1><?php echo $nome; ?></h1>
+    <p><?php echo "Cliente desde: "; echo $data; ?> </p>
         </div>
+
 
       </div>
     </div>

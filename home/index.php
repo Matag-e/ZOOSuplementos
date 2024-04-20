@@ -60,6 +60,10 @@ if (isset($_SESSION['token'])) {
             </li>
             <div class="linha-vertical"></div>
             <li class="nav-item">
+              <a class="nav-link" href="../perfil/profile.php"><img src="../img/account.png" alt=""
+                  class="fonteLog"><span></span></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="../login/desconecta.php"><img src="../img/icons8-logout-50.png" alt=""
                   class="fonteLog"><span>Logout</span></a>
             </li>

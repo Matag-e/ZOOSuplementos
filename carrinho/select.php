@@ -37,7 +37,7 @@ if ($idUser != '') {
             );
         }
     } else {
-        echo "0 resultados";
+        echo "";
     }
 
     $totalPreco = 0;
