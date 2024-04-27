@@ -21,7 +21,7 @@ include ('profileset.php');
   <link rel="preconnect"
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>Usuario</title>
 </head>
 <body>
 <header>
@@ -99,10 +99,10 @@ include ('profileset.php');
         <div class="nomeProfile">
     <h1><?php echo $nome; ?></h1>
     <p><?php echo "Cliente desde: "; echo $data; ?> </p>
-    <h2><span style="color: rgba(255, 0, 0, 0.562);">Idade: </span><?php echo $idade; ?> 
-    <h2><span style="color: rgba(255, 0, 0, 0.562);">CPF: </span><?php echo $cpf; ?> </h2>
-    <h2><span style="color: rgba(255, 0, 0, 0.562);">Telefone: </span><?php echo $telefone; ?> </h2>
-    <h2><span style="color: rgba(255, 0, 0, 0.562);">Email: </span><?php echo $email; ?> </h2>
+    <h2><span class="fColor">Idade: </span><span class="idColor"><?php echo $idade; ?></span></h2>
+    <h2><span class="fColor">CPF: </span><span class="idColor"><?php echo $cpf; ?> </h2>
+    <h2><span class="fColor">Telefone: </span><span class="idColor"><?php echo $telefone; ?> </h2>
+    <h2><span class="fColor">Email: </span><span class="idColor"><?php echo $email; ?> </h2>
         </div>
 
 
