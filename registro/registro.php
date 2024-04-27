@@ -151,68 +151,71 @@ h1 {
 <body>
 
 <header>
-        <nav class="navbar navbar-expand-lg coloriz">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../home/index.php"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav justify-content-end spaces">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../home/index.php">Inicio</a>
-                        </li>
-                        <?php if ($idUser != '') { ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../carrinho/carrinho.php"><img
-                                    src="../img/icons8-shopping-cart-50.png" alt="" style="width:30px"></a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../login/desconecta.php"><img
-                                    src="../img/icons8-logout-50.png" alt="" class="fonteLog"><span>Logout</span></a>
-                        </li>
-                        <?php } else { ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../carrinho/carrinho.php"><img
-                                    src="../img/icons8-shopping-cart-50.png" alt="" style="width:30px"></a>
-                        </li>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../login/login.php"><img src="../img/account.png" alt=""
-                                    class="fonteLog"><span>Login</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../registro/registro.php"><img
-                                    src="../img/icons8-interface-de-usuário-natural-2-48.png" alt=""
-                                    class="fonteLog"><span class="Teste">Registre-se</span></a>
-                        </li>
-                        <?php } ?>
-                        <?php
+    <nav class="navbar navbar-expand-lg coloriz">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home/index.php"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end spaces">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../home/index.php">Inicio</a>
+            </li>
+            <?php if ($idUser != '') { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+                  style="width:30px"></a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../perfil/profile.php"><img src="../img/account.png" alt=""
+                  class="fonteLog"><span></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/desconecta.php"><img src="../img/icons8-logout-50.png" alt=""
+                  class="fonteLog"><span>Logout</span></a>
+            </li>
+            <?php } else { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+                  style="width:30px"></a>
+            </li>
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../login/login.php"><img src="../img/account.png" alt=""
+                  class="fonteLog"><span>Login</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../registro/registro.php"><img
+                  src="../img/icons8-interface-de-usuário-natural-2-48.png" alt="" class="fonteLog"><span
+                  class="Teste">Registre-se</span></a>
+            </li>
+            <?php } ?>
+            <?php
                         if ($idUser == '8') { ?>
-                        <div class="linha-vertical"></div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../dbprod/add_product.php">Adicionar Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../dbprod/modidyprod.php">Listar Produtos</a>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-  
+            <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../dbprod/add_product.php">Adicionar Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../dbprod/modidyprod.php">Listar Produtos</a>
+            </li>
+            <?php } ?>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 <br><br>
 <div>
 <h1>Formulário de Cadastro</h1><br>

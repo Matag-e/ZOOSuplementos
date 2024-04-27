@@ -62,11 +62,7 @@ body {
 }
 
 .produtoDesc:hover {
-    background-color: rgba(255, 0, 0, 0.93);
-}
-
-.produtoDesc span:hover{
-    color: blueviolet;
+    background-color: rgb(0, 0, 0, 0.93);
 }
 
 .textoProduto {
