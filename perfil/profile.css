@@ -92,12 +92,22 @@ h2 {
     transition: 0.2s;
 }
 
+.nomeProfile h2{
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    
+}
+
 .nomeProfile p {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    color: rgba(255, 0, 0, 0.562);
+    color: rgba(255, 0, 0, 0.562);;
 }
 
 .nomeProfile h3{

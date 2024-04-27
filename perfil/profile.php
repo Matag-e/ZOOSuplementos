@@ -99,6 +99,10 @@ include ('profileset.php');
         <div class="nomeProfile">
     <h1><?php echo $nome; ?></h1>
     <p><?php echo "Cliente desde: "; echo $data; ?> </p>
+    <h2><span style="color: rgba(255, 0, 0, 0.562);">Idade: </span><?php echo $idade; ?> 
+    <h2><span style="color: rgba(255, 0, 0, 0.562);">CPF: </span><?php echo $cpf; ?> </h2>
+    <h2><span style="color: rgba(255, 0, 0, 0.562);">Telefone: </span><?php echo $telefone; ?> </h2>
+    <h2><span style="color: rgba(255, 0, 0, 0.562);">Email: </span><?php echo $email; ?> </h2>
         </div>
 
 
