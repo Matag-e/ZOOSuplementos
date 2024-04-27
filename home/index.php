@@ -334,7 +334,7 @@ if (isset($_SESSION['token'])) {
         </div>
         <div class="textCard">
           <img src="/img/imgAV.png" alt="" class="imgAv">
-          <h4>Nao Lembro Nome<br>
+          <h4>Jobson Nascimento<br>
             <p class="textoParc">30/06/2002</p>
           </h4>
           </h4>
