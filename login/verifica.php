@@ -25,7 +25,7 @@ if (isset($_POST['email'], $_POST['senha'])) {
             $_SESSION['token'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location:../home/index.php");
+            header("Location:../index.php");
             exit; 
         } else {
             echo "<script>alert('E-mail ou senha incorretos');</script>";

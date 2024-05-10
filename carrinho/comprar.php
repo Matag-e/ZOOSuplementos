@@ -16,11 +16,11 @@ if (isset($_SESSION['token'])) {
 
         $mysqli->begin_transaction();
 
-        $sql_update = "UPDATE ZooProdutos SET quantidade = quantidade - $quantidade WHERE id = $iditem AND quantidade >= $quantidade";
+        $sql_update = "UPDATE zooprodutos SET quantidade = quantidade - $quantidade WHERE id = $iditem AND quantidade >= $quantidade";
         $result_update = $mysqli->query($sql_update);
 
         if ($result_update && $mysqli->affected_rows > 0) {
-            $sql_insert = "INSERT INTO CompraZooProdutos (idUser, idItem, Nome, preco, quantidade) VALUES ($idUser, $iditem, '$nome', $preco, $quantidade)";
+            $sql_insert = "INSERT INTO comprazooprodutos (idUser, idItem, Nome, preco, quantidade) VALUES ($idUser, $iditem, '$nome', $preco, $quantidade)";
             $result_insert = $mysqli->query($sql_insert);
 
             if ($result_insert) {
@@ -42,7 +42,7 @@ if (isset($_SESSION['token'])) {
         header("Location: {$_SERVER['HTTP_REFERER']}");
     }
 } else {
-    header("Location: ../login/login.php");
+    header("Location:/login/login.php");
     exit;
 }
 ?>

@@ -62,7 +62,7 @@ h2 {
 .cartaoUser {
     width: 540px;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-    height: 550px;
+    height: 590px;
     border-radius: 17px;
     box-shadow: rgb(0, 0, 0) 3px 22px 70px 4px;
     display: flex;
@@ -117,4 +117,13 @@ h2 {
     color: rgba(255, 0, 0, 0.562);
     font-weight: bold;
     font-size: 25px;
+}
+
+.nomeProfile h3{
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
 }
