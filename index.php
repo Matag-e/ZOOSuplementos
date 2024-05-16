@@ -39,7 +39,7 @@ if (isset($_SESSION['token'])) {
   <header>
     <nav class="navbar navbar-expand-lg coloriz">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../home/index.php"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
+        <a class="navbar-brand" href="/index.php"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@ if (isset($_SESSION['token'])) {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-end spaces">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="../home/index.php">Inicio</a>
+              <a class="nav-link " aria-current="page" href="/index.php">Inicio</a>
             </li>
             <?php if ($idUser != '') { ?>
             <li class="nav-item">
@@ -59,6 +59,10 @@ if (isset($_SESSION['token'])) {
                   style="width:30px"></a>
             </li>
             <div class="linha-vertical"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="../perfil/profile.php"><img src="../img/account.png" alt=""
+                  class="fonteLog"><span></span></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="../login/desconecta.php"><img src="../img/icons8-logout-50.png" alt=""
                   class="fonteLog"><span>Logout</span></a>
@@ -330,8 +334,8 @@ if (isset($_SESSION['token'])) {
         </div>
         <div class="textCard">
           <img src="/img/imgAV.png" alt="" class="imgAv">
-          <h4>Edson Arantes<br>
-            <p class="textoParc">01/01/2023</p>
+          <h4>Jobson Nascimento<br>
+            <p class="textoParc">30/06/2002</p>
           </h4>
           </h4>
           <small class="textoAv">A qualidade dos suplementos são incriveis</small>
@@ -361,7 +365,7 @@ if (isset($_SESSION['token'])) {
 
 </body>
 
-<script src="../home/index.js"></script>
+<script src="/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
