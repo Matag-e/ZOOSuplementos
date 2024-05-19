@@ -20,7 +20,7 @@ if (isset($_SESSION['token'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suplementos Fitness</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="shortchut icon" href="/img/apple-touch-icon.png">
+  <link rel="shortchut icon" href="../ZooSuplementos/img/apple-touch-icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -39,7 +39,7 @@ if (isset($_SESSION['token'])) {
   <header>
     <nav class="navbar navbar-expand-lg coloriz">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.php"><img src="../img/Group 5.svg" alt="Logo" class="imglogo"></a>
+        <a class="navbar-brand" href="../ZooSuplementos/index.php"><img src="../ZooSuplementos/img/Group 5.svg" alt="Logo" class="imglogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,43 +47,43 @@ if (isset($_SESSION['token'])) {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-end spaces">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/index.php">Inicio</a>
+              <a class="nav-link " aria-current="page" href="../ZooSuplementos/index.php">Inicio</a>
             </li>
             <?php if ($idUser != '') { ?>
             <li class="nav-item">
-              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+              <a class="nav-link" href="../ZooSuplementos/produtos/produtos.php">Produtos</a>
             </li>
             <div class="linha-vertical"></div>
             <li class="nav-item">
-              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+              <a class="nav-link" href="../ZooSuplementos/carrinho/carrinho.php"><img src="../ZooSuplementos/img/icons8-shopping-cart-50.png" alt=""
                   style="width:30px"></a>
             </li>
             <div class="linha-vertical"></div>
             <li class="nav-item">
-              <a class="nav-link" href="../perfil/profile.php"><img src="../img/account.png" alt=""
+              <a class="nav-link" href="../ZooSuplementos/perfil/profile.php"><img src="../ZooSuplementos/img/account.png" alt=""
                   class="fonteLog"><span></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../login/desconecta.php"><img src="../img/icons8-logout-50.png" alt=""
+              <a class="nav-link" href="../ZooSuplementos/login/desconecta.php"><img src="../ZooSuplementos/img/icons8-logout-50.png" alt=""
                   class="fonteLog"><span>Logout</span></a>
             </li>
             <?php } else { ?>
             <li class="nav-item">
-              <a class="nav-link" href="../produtos/produtos.php">Produtos</a>
+              <a class="nav-link" href="../ZooSuplementos/produtos/produtos.php">Produtos</a>
             </li>
             <div class="linha-vertical"></div>
             <li class="nav-item">
-              <a class="nav-link" href="../carrinho/carrinho.php"><img src="../img/icons8-shopping-cart-50.png" alt=""
+              <a class="nav-link" href="../ZooSuplementos/carrinho/carrinho.php"><img src="../ZooSuplementos/img/icons8-shopping-cart-50.png" alt=""
                   style="width:30px"></a>
             </li>
             <div class="linha-vertical"></div>
             <li class="nav-item">
-              <a class="nav-link" href="../login/login.php"><img src="../img/account.png" alt=""
+              <a class="nav-link" href="../ZooSuplementos/login/login.php"><img src="../ZooSuplementos/img/account.png" alt=""
                   class="fonteLog"><span>Login</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../registro/registro.php"><img
-                  src="../img/icons8-interface-de-usuário-natural-2-48.png" alt="" class="fonteLog"><span
+              <a class="nav-link" href="../ZooSuplementos/registro/registro.php"><img
+                  src="../ZooSuplementos/img/icons8-interface-de-usuário-natural-2-48.png" alt="" class="fonteLog"><span
                   class="Teste">Registre-se</span></a>
             </li>
             <?php } ?>
@@ -91,10 +91,10 @@ if (isset($_SESSION['token'])) {
                         if ($idUser == '8') { ?>
             <div class="linha-vertical"></div>
             <li class="nav-item">
-              <a class="nav-link" href="../dbprod/add_product.php">Adicionar Produtos</a>
+              <a class="nav-link" href="../ZooSuplementos/dbprod/add_product.php">Adicionar Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../dbprod/modidyprod.php">Listar Produtos</a>
+              <a class="nav-link" href="../ZooSuplementos/dbprod/modidyprod.php">Listar Produtos</a>
             </li>
             <?php } ?>
           </ul>
@@ -106,13 +106,13 @@ if (isset($_SESSION['token'])) {
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
-        <img src="../img/banner.png" class="d-block w-100" alt="...">
+        <img src="../ZooSuplementos/img/banner.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="../img/bannerM.png" class="d-block w-100" alt="...">
+        <img src="../ZooSuplementos/img/bannerM.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="../img/banner3.png" class="d-block w-100" alt="...">
+        <img src="../ZooSuplementos/img/banner3.png" class="d-block w-100" alt="...">
       </div>
 
     </div>
@@ -164,7 +164,7 @@ if (isset($_SESSION['token'])) {
       <div class="testeS">
         <div class="container">
           <div class="header">
-            <img src="../img/rino.jpg" srcset="" class="imgCard">
+            <img src="../ZooSuplementos/img/rino.jpg" srcset="" class="imgCard">
           </div>
           <p>Pré Treino</p>
           <div class="textCard">
@@ -177,7 +177,7 @@ if (isset($_SESSION['token'])) {
 
           </div>
           <button class="btnBuy">
-            <a href="/produtos/PreTreino.php" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="../ZooSuplementos/produtos/PreTreino.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -186,7 +186,7 @@ if (isset($_SESSION['token'])) {
       <div class="testeS">
         <div class="container">
           <div class="header">
-            <img src="../img/wolf.jpg" alt="" class="imgCard">
+            <img src="../ZooSuplementos/img/wolf.jpg" alt="" class="imgCard">
           </div>
           <p>Multi Vitaminico</p>
           <div class="textCard">
@@ -197,7 +197,7 @@ if (isset($_SESSION['token'])) {
               dia</small>
           </div>
           <button class="btnBuy">
-            <a href="/produtos/multi.php" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="../ZooSuplementos/produtos/multi.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -206,7 +206,7 @@ if (isset($_SESSION['token'])) {
       <div class="testeS">
         <div class="container">
           <div class="header">
-            <img src="../img/crea.jpg" alt="" class="imgCard">
+            <img src="../ZooSuplementos/img/crea.jpg" alt="" class="imgCard">
           </div>
           <p>Creatina</p>
           <div class="textCard">
@@ -218,7 +218,7 @@ if (isset($_SESSION['token'])) {
               agora !</small>
           </div>
           <button class="btnBuy">
-            <a href="/produtos/creatina.php" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="../ZooSuplementos/produtos/creatina.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -226,7 +226,7 @@ if (isset($_SESSION['token'])) {
       <div class="testeS">
         <div class="container">
           <div class="header">
-            <img src="../img/whey.jpg" alt="" class="imgCard">
+            <img src="../ZooSuplementos/img/whey.jpg" alt="" class="imgCard">
           </div>
           <p>Whey</p>
           <div class="textCard">
@@ -238,7 +238,7 @@ if (isset($_SESSION['token'])) {
               fitness!</small>
           </div>
           <button class="btnBuy">
-            <a href="/produtos/whey.php" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="../ZooSuplementos/produtos/whey.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -258,7 +258,7 @@ if (isset($_SESSION['token'])) {
         <div class="header">
         </div>
         <div class="textCard">
-          <img src="/img/imgAV.png" alt="" class="imgAv">
+          <img src="../ZooSuplementos/img/imgAV.png" alt="" class="imgAv">
           <h4>Mateus Santos<br>
             <p class="textoParc">18/02/1999</p>
           </h4>
@@ -284,7 +284,7 @@ if (isset($_SESSION['token'])) {
         <div class="header">
         </div>
         <div class="textCard">
-          <img src="/img/imgAV.png" alt="" class="imgAv">
+          <img src="../ZooSuplementos/img/imgAV.png" alt="" class="imgAv">
           <h4>Vinicius Santos<br>
             <p class="textoParc">23/09/1978</p>
           </h4>
@@ -310,7 +310,7 @@ if (isset($_SESSION['token'])) {
         <div class="header">
         </div>
         <div class="textCard">
-          <img src="/img/imgAV.png" alt="" class="imgAv">
+          <img src="../ZooSuplementos/img/imgAV.png" alt="" class="imgAv">
           <h4>Ronaldo Nazario<br>
             <p class="textoParc">30/06/2002</p>
           </h4>
@@ -337,7 +337,7 @@ if (isset($_SESSION['token'])) {
         <div class="header">
         </div>
         <div class="textCard">
-          <img src="/img/imgAV.png" alt="" class="imgAv">
+          <img src="../ZooSuplementos/img/imgAV.png" alt="" class="imgAv">
           <h4>Jobson Nascimento<br>
             <p class="textoParc">30/06/2002</p>
           </h4>
@@ -369,7 +369,7 @@ if (isset($_SESSION['token'])) {
 
 </body>
 
-<script src="/index.js"></script>
+<script src="../ZooSuplementos/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
