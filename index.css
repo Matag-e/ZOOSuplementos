@@ -309,3 +309,67 @@ footer {
         border: none;
     }
 }
+
+/* Estilos para a barra de navegação em dispositivos móveis */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    border: none;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela até 600px */
+@media only screen and (max-width: 600px) {
+  .hero,
+  .explorarProduto,
+  .back,
+  .cardes {
+    width: 100%;
+    padding: 0;
+  }
+
+  .produtoDesc,
+  .cardi,
+  .testeS,
+  .avaliacaoCard {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Estilos para dispositivos com largura de tela de 601px a 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .hero,
+  .explorarProduto,
+  .back,
+  .cardes {
+    width: 100%;
+    padding: 0;
+}
+
+
+  .produtoDesc,
+  .cardi,
+  .testeS,
+  .avaliacaoCard {
+    width: 50%;
+    margin: 10px;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela maior que 900px */
+@media only screen and (min-width: 901px) {
+  .hero,
+  .explorarProduto,
+  .back,
+  .cardes {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .produtoDesc,
+  .cardi,
+  .testeS,
+  .avaliacaoCard {
+    width: 25%;
+    margin: 10px;
+  }
+}

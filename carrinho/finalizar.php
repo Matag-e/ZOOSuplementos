@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 
 // Verifica se o token de usuário está definido na sessão
@@ -10,8 +8,6 @@ if (isset($_SESSION['token'])) {
     // Se o token não estiver definido, defina $idUser como vazio
     $idUser = '';
 }
-
-
 
 $servername = "localhost";
 $username = "id22140339_zoosup";
@@ -24,23 +20,19 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM supusers WHERE id = $idUser";
+// Verifica se o usuário está logado antes de limpar o carrinho de compras
+if ($idUser != '') {
+    // Limpa o carrinho de compras excluindo os registros associados ao usuário atual
+    $sql = "DELETE FROM comprazooprodutos WHERE idUser = $idUser";
 
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // Se houver resultados, atribua os valores às variáveis ​​PHP
-  $row = $result->fetch_assoc();
-  $id = $row["id"];
-  $nome = $row["nome"];
-  $idade = $row["idade"];
-  $cpf = $row["cpf"];
-  $telefone = $row["telefone"];
-  $email = $row["email"];
-  $senhaUsuario = $row["senha"];
-  $data = $row["reg_date"];
+    if ($conn->query($sql) === TRUE) {
+        echo "Carrinho limpo com sucesso!";
+    } else {
+        echo "Erro ao limpar carrinho: " . $conn->error;
+    }
 } else {
-  echo "Nenhum usuário encontrado.";
+    echo "Usuário não identificado. Não foi possível limpar o carrinho.";
 }
 
+$conn->close();
 ?>

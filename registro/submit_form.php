@@ -13,12 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    echo "Dados recebidos com sucesso!";
+    //echo "Dados recebidos com sucesso!";
 
     $servername = "localhost";
-    $username = "yVini";
-    $senha = "Vinicius10";
-    $dbname = "myDB";
+    $username = "id22140339_zoosup";
+    $senha = "Zoouni9.";
+    $dbname = "id22140339_zoosuplementos";
 
     $conn = new mysqli($servername, $username, $senha, $dbname);
 
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     $sql = "
-    CREATE TABLE IF NOT EXISTS SupUsers (
+    CREATE TABLE IF NOT EXISTS supusers (
         id INT AUTO_INCREMENT PRIMARY KEY,
         nome VARCHAR(30) NOT NULL,
         idade INT(3) NOT NULL,
@@ -40,18 +40,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
 
     if ($conn->query($sql) === TRUE) {
-        echo "Table created successfully";
+       // echo "Table created successfully";
     } else {
-        echo "Error creating table: " . $conn->error;
+       // echo "Error creating table: " . $conn->error;
     }
 
     $sql_insert = "
-    INSERT INTO SupUsers (nome, idade, cpf, telefone, email, senha)
+    INSERT INTO supusers (nome, idade, cpf, telefone, email, senha)
     VALUES ('$nome', '$idade', '$cpf', '$telefone', '$email', '$senha')";
     if ($conn->query($sql_insert) === true){
         $last_id = $conn->insert_id;
+        header("Location:../index.php");
         echo "Novo registro criado com ID: " . $last_id;
-        header("Location:../home/index.php");
         exit; 
     } else {
         echo "<script>alert('Erro ao registrar o usuário. Verifique se os dados estão corretos e tente novamente.');</script>";

@@ -166,6 +166,7 @@ if (isset($_SESSION['token'])) {
           <div class="header">
             <img src="../img/rino.jpg" srcset="" class="imgCard">
           </div>
+          <p>Pré Treino</p>
           <div class="textCard">
             <h4>R$89.99 <br>
               <p class="textoParc">em até 3x no cartão de crédito</p>
@@ -176,7 +177,7 @@ if (isset($_SESSION['token'])) {
 
           </div>
           <button class="btnBuy">
-            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="/produtos/PreTreino.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -187,6 +188,7 @@ if (isset($_SESSION['token'])) {
           <div class="header">
             <img src="../img/wolf.jpg" alt="" class="imgCard">
           </div>
+          <p>Multi Vitaminico</p>
           <div class="textCard">
             <h4>R$45.99 <br>
               <p class="textoParc">em até 3x no cartão de crédito</p>
@@ -195,7 +197,7 @@ if (isset($_SESSION['token'])) {
               dia</small>
           </div>
           <button class="btnBuy">
-            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="/produtos/multi.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -206,6 +208,7 @@ if (isset($_SESSION['token'])) {
           <div class="header">
             <img src="../img/crea.jpg" alt="" class="imgCard">
           </div>
+          <p>Creatina</p>
           <div class="textCard">
             <h4>R$80.99 <br>
               <p class="textoParc">em até 3x no cartão de crédito</p>
@@ -215,7 +218,7 @@ if (isset($_SESSION['token'])) {
               agora !</small>
           </div>
           <button class="btnBuy">
-            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="/produtos/creatina.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
@@ -225,6 +228,7 @@ if (isset($_SESSION['token'])) {
           <div class="header">
             <img src="../img/whey.jpg" alt="" class="imgCard">
           </div>
+          <p>Whey</p>
           <div class="textCard">
             <h4>R$99.99 <br>
               <p class="textoParc">em até 3x no cartão de crédito</p>
@@ -234,7 +238,7 @@ if (isset($_SESSION['token'])) {
               fitness!</small>
           </div>
           <button class="btnBuy">
-            <a href="#" style="text-decoration:none; color:white">COMPRAR</a>
+            <a href="/produtos/whey.php" style="text-decoration:none; color:white">COMPRAR</a>
           </button>
         </div>
       </div>
