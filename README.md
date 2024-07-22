@@ -4,24 +4,24 @@ Site de suplementos desenvolvido como parte do curso de Análise e Desenvolvimen
 
 # Front-end
 
-## HTML
+### HTML
 Para a estruturação das páginas web
 
-## CSS
+### CSS
 Para a estilização e layout
 
-## Bootstrap 
+### Bootstrap 
 Como framework para design responsivo e componentes visuais, e JavaScript para funcionalidades interativas e dinâmicas.
 
 # Back-end
 
-## PHP 
+### PHP 
 Foi implementado para a lógica dd servidor e o processamento de dados
 
-## SQL
+### SQL
 Gerenciamento do banco de dados
 
-## AJAX
+### AJAX
 Para comunicação assíncrona para uma melhor experiência do usuário 
 
 
