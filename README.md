@@ -16,7 +16,7 @@ Como framework para design responsivo e componentes visuais, e JavaScript para f
 # Back-end
 
 ### PHP 
-Foi implementado para a lógica dd servidor e o processamento de dados
+Foi implementado para a lógica dO servidor e o processamento de dados
 
 ### SQL
 Gerenciamento do banco de dados
